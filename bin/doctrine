@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+use Doctrine\ORM\Tools\Console\ConsoleRunner;
+use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
+
+$root_dir = dirname( dirname( dirname( dirname( __DIR__ ) ) ) );
+
+require_once $root_dir . '/wp-load.php';
+
+$entityManager = dtest_get_entity_manager();
+
+ConsoleRunner::run(
+    new SingleManagerProvider($entityManager),
+);

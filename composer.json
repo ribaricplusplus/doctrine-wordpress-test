@@ -1,0 +1,25 @@
+{
+	"name": "crosslink/dtest",
+	"authors": [],
+	"autoload": {
+		"psr-4": {
+			"Dtest\\": "src/"
+		}
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.6",
+		"wp-coding-standards/wpcs": "^2.3"
+	},
+	"require": {
+		"crosslink-ch/wp-utilitatem": "0.1.4",
+		"doctrine/orm": "^2.14",
+		"doctrine/dbal": "^3.6",
+		"symfony/cache": "^6.2"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/crosslink-ch/wp-utilitatem"
+		}
+	]
+}
